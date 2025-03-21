@@ -1,20 +1,42 @@
-#Zgadywanie Liczby
-Gra w zgadywanie liczby to prosty projekt w Pythonie, który pomaga rozwijać umiejętności programistyczne. Program losuje liczbę, a gracz próbuje ją odgadnąć na podstawie podpowiedzi. Możesz grać wielokrotnie, aż zdecydujesz się zakończyć.
+# Zgadywanie Liczby
+
+Gra w zgadywanie liczby to prosty, ale angażujący projekt w Pythonie, stworzony z myślą o nauce i zabawie. Program losuje liczbę, a gracz próbuje ją odgadnąć na podstawie podpowiedzi. Gra posiada dodatkowe funkcjonalności, takie jak poziomy trudności, limit prób oraz zapis wyników do pliku.
+
+---
 
 ## Funkcjonalności
-- Losowanie liczby z zakresu 1–100.
-- Gracz zgaduje liczbę i otrzymuje wskazówki:
-- "Za mało!" — liczba jest za niska.
-- "Za dużo!" — liczba jest za wysoka.
-- Licznik prób pokazuje, ile razy gracz próbował.
-- Możliwość ponownego uruchomienia gry lub zakończenia po każdej rozgrywce.
 
+- **Poziomy trudności**:
+  - Łatwy: liczba z zakresu 1–50, limit 10 prób.
+  - Średni: liczba z zakresu 1–100, limit 7 prób.
+  - Trudny: liczba z zakresu 1–200, limit 5 prób.
+  
+- **Limit prób**: 
+  - Gracz ma ograniczoną liczbę prób, w zależności od wybranego poziomu trudności.
 
-## Instrukcja gry
-1. Na początku gry wyświetla się powitanie i zakres liczby, którą musisz odgadnąć.
-2. Wpisuj swoje zgadywane liczby w terminalu.
-3. Program podpowie, czy Twoja liczba jest za mała, za duża, czy poprawna.
-4. Gdy odgadniesz liczbę, możesz wybrać:
-  - t — zagraj jeszcze raz.
-  - n — zakończ grę.
-5. Po zakończeniu gra wyświetli podziękowanie.
+- **Zapis wyników do pliku**:
+  - Wyniki są zapisywane w pliku `wyniki.txt`, aby monitorować postępy gracza.
+
+- **Podpowiedzi**:
+  - Gra informuje, czy zgadywana liczba jest "za mała" lub "za duża".
+
+- **Kontynuacja gry**:
+  - Po każdej rundzie gracz decyduje, czy grać ponownie, czy zakończyć grę.
+
+---
+
+## Wymagania
+
+- Python w wersji 3.6 lub nowszej.
+
+---
+
+## Jak uruchomić
+
+1. **Krok 1**: Upewnij się, że Python jest zainstalowany na Twoim komputerze.
+2. **Krok 2**: Pobierz plik `zgadywanie_liczby.py` i zapisz go w wybranym folderze.
+3. **Krok 3**: Otwórz terminal w folderze z plikiem (lub użyj terminala VS Code).
+4. **Krok 4**: Uruchom grę za pomocą polecenia:
+
+   ```bash
+   python zgadywanie_liczby.py
